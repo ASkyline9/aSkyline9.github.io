@@ -3,9 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>askyline9.github.io</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4071724251256256" crossorigin="anonymous"></script>
+    <title>Skyline Hub - Your Quick Tools for Smarter Living</title>
+    <meta name="description" content="Explore useful web tools including TNB electricity calculator, petrol usage calculator, Time dotcom referral, and Pi Network referral.">
+    <meta name="keywords" content="TNB calculator, petrol calculator, Time dotcom referral, Pi Network referral, Malaysia utilities">
+    <meta name="author" content="Skyline9">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://askyline9.github.io/">
+    <meta property="og:title" content="Skyline Hub - Your Quick Tools for Smarter Living">
+    <meta property="og:description" content="Explore useful web tools including TNB electricity calculator, petrol usage calculator, Time dotcom referral, and Pi Network referral.">
+    <meta property="og:image" content="https://askyline9.github.io/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://askyline9.github.io/">
+    <meta property="twitter:title" content="Skyline Hub - Your Quick Tools for Smarter Living">
+    <meta property="twitter:description" content="Explore useful web tools including TNB electricity calculator, petrol usage calculator, Time dotcom referral, and Pi Network referral.">
+    <meta property="twitter:image" content="https://askyline9.github.io/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://askyline9.github.io/">
+    
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --accent: #e74c3c;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --gray: #95a5a6;
+            --tnb-color: #3498db;
+            --petrol-color: #e74c3c;
+            --time-color: #2ecc71;
+            --pi-color: #9b59b6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .ad-banner {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            max-width: 728px;
+        }
+        
+        .ad-banner:hover {
+            transform: translateY(-5px);
+        }
+        
+        .ad-banner h2 {
+            color: #ff5722;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .ad-banner img {
+            max-width: 100%;
+            border-radius: 8px;
+            height: auto;
+        }
+        
+        .ad-banner p {
+            margin-top: 10px;
+            color: #7f8c8d;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-icon {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+        
+        .project-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-content h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .project-content p {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+        
+        .tnb { background: linear-gradient(to right, #3498db, #2c3e50); }
+        .petrol { background: linear-gradient(to right, #e74c3c, #d35400); }
+        .time { background: linear-gradient(to right, #2ecc71, #27ae60); }
+        .pi { background: linear-gradient(to right, #9b59b6, #8e44ad); }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .ad-banner {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 20px 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .project-icon {
+                height: 120px;
+                font-size: 3rem;
+            }
+            
+            .project-content h2 {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--dark);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+    
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Skyline Hub - Your Quick Tools for Smarter Living",
+      "url": "https://askyline9.github.io/",
+      "description": "A collection of useful web tools including TNB electricity calculator, petrol usage calculator, Time dotcom referral, and Pi Network referral.",
+      "applicationCategory": "UtilityApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Skyline9"
+      }
+    }
+    </script>
 </head>
 <body>
-    </body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <div class="container">
+        <header>
+            <h1>Skyline Hub</h1>
+            <p>Your Quick Tools for Smarter Living</p>
+        </header>
+        
+        <div class="ad-banner" role="complementary" aria-label="Shopee Advertisement">
+            <h2>Special Offers on Shopee</h2>
+            <img src="https://via.placeholder.com/728x90?text=Shopee+Ad+Banner+Placeholder" alt="Shopee Promotions - Great deals on electronics, fashion, and home products" width="728" height="90">
+            <p>Check out the latest deals and discounts!</p>
+        </div>
+        
+        <main id="main">
+            <h2 class="visually-hidden">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <article class="project-card" itemscope itemtype="https://schema.org/WebApplication">
+                    <div class="project-icon tnb">
+                        <span class="fas fa-bolt" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2 itemprop="name">TNB Cost Calculator</h2>
+                        <p itemprop="description">Calculate your electricity usage and estimate your monthly TNB bills with this easy-to-use calculator. Perfect for Malaysian households and businesses.</p>
+                        <a href="https://askyline9.github.io/tnb-calculator-v2f/" class="btn" itemprop="url">Use Calculator</a>
+                    </div>
+                </article>
+                
+                <article class="project-card" itemscope itemtype="https://schema.org/WebApplication">
+                    <div class="project-icon petrol">
+                        <span class="fas fa-gas-pump" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2 itemprop="name">Petrol Usage Calculator</h2>
+                        <p itemprop="description">Track and calculate your vehicle's fuel consumption and estimate your monthly petrol expenses. Save money on your transportation costs.</p>
+                        <a href="https://askyline9.github.io/petrol-calculator-v2/" class="btn" itemprop="url">Use Calculator</a>
+                    </div>
+                </article>
+                
+                <article class="project-card" itemscope itemtype="https://schema.org/WebApplication">
+                    <div class="project-icon time">
+                        <span class="fas fa-wifi" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2 itemprop="name">Time dotcom Referral</h2>
+                        <p itemprop="description">Sign up for Time dotcom internet services using my referral link for special benefits. Enjoy high-speed internet with great discounts.</p>
+                        <a href="https://askyline9.github.io/timedotcom/" class="btn" itemprop="url">View Referral</a>
+                    </div>
+                </article>
+                
+                <article class="project-card" itemscope itemtype="https://schema.org/WebApplication">
+                    <div class="project-icon pi">
+                        <span class="fas fa-coins" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2 itemprop="name">Pi Network Referral</h2>
+                        <p itemprop="description">Join the Pi Network community using my referral code to start mining Pi cryptocurrency. Be part of the next digital currency revolution.</p>
+                        <a href="https://askyline9.github.io/pinetwork/" class="btn" itemprop="url">Join Pi Network</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+        
+        <div class="ad-banner" role="complementary" aria-label="Lazada Advertisement">
+            <h2>Great Deals on Lazada</h2>
+            <a href="https://s.lazada.com.my/s.sY0vL?cc" target="_blank" rel="noopener">
+                <img src="https://via.placeholder.com/728x90?text=Lazada+Ad+Banner+Placeholder" alt="Lazada Promotions - Amazing discounts across all categories" width="728" height="90">
+            </a>
+            <p>Don't miss out on these amazing offers!</p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Skyline Hub | All Rights Reserved</p>
+            <p>Email: <a href="mailto:askyline9@gmail.com" style="color: #ffcc00;">askyline9@gmail.com</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        // Simple lazy loading for images
+        document.addEventListener("DOMContentLoaded", function() {
+            const lazyImages = [].slice.call(document.querySelectorAll("img"));
+            
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
+        });
+    </script>
+    
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
 </html>
