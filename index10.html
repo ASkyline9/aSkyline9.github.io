@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Hub - Your Quick Tools for Smarter Living</title>
+    <meta name="description" content="Skyline Hub offers free tools and resources to simplify daily life in Malaysia - from utility calculators to earning opportunities through referrals and surveys.">
+    <meta name="keywords" content="TNB calculator, petrol calculator, referral programs, Malaysia utilities, earning opportunities, side income, survey sites">
+    <meta name="author" content="Skyline9">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4071724251256256" crossorigin="anonymous"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --accent: #e74c3c;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --gray: #95a5a6;
+            --tnb-color: #3498db;
+            --petrol-color: #e74c3c;
+            --time-color: #2ecc71;
+            --pi-color: #9b59b6;
+            --lalamove-color: #6c5ce7;
+            --surveoo-color: #00b894;
+            --jobs-color: #f39c12;
+            --su7-color: #8e44ad;
+            --shopee-color: #ff5722;
+            --lazada-color: #0f4dae;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            margin-bottom: 10px;
+        }
+        
+        header h1 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        header p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .ad-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+        }
+        
+        .ad-label {
+            color: white;
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+            opacity: 0.7;
+        }
+        
+        .introduction {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+        }
+        
+        .introduction h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        
+        .introduction p {
+            margin-bottom: 15px;
+            color: #34495e;
+            line-height: 1.7;
+        }
+        
+        .purpose-section {
+            background: rgba(255, 255, 255, 0.8);
+            border-left: 5px solid var(--primary);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        
+        .purpose-section h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .value-proposition {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+            justify-content: center;
+        }
+        
+        .value-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .value-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .ads-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+        
+        .ad-banner {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 15px 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            max-width: 350px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .ad-banner:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+        
+        .ad-banner a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .ad-banner h2 {
+            margin-bottom: 0;
+            font-size: 1.2rem;
+        }
+        
+        .shopee-banner h2 {
+            color: #ffcc00;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .lazada-banner h2 {
+            color: #ffcc00;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-icon {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 4rem;
+        }
+        
+        .project-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-content h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .project-content p {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+        
+        .tnb { background: linear-gradient(to right, #3498db, #2c3e50); }
+        .petrol { background: linear-gradient(to right, #e74c3c, #d35400); }
+        .time { background: linear-gradient(to right, #2ecc71, #27ae60); }
+        .pi { background: linear-gradient(to right, #9b59b6, #8e44ad); }
+        .lalamove { background: linear-gradient(to right, #6c5ce7, #4a3fb5); }
+        .surveoo { background: linear-gradient(to right, #00b894, #009d7a); }
+        .jobs { background: linear-gradient(to right, #f39c12, #e67e22); }
+        .su7 { background: linear-gradient(to right, #8e44ad, #6c3483); }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .ads-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .ad-banner {
+                max-width: 100%;
+            }
+            
+            header {
+                padding: 20px 10px;
+            }
+            
+            .introduction {
+                padding: 20px;
+            }
+            
+            .value-card {
+                min-width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .project-icon {
+                height: 120px;
+                font-size: 3rem;
+            }
+            
+            .project-content h2 {
+                font-size: 1.2rem;
+            }
+            
+            .ad-banner h2 {
+                font-size: 1.1rem;
+            }
+            
+            .introduction h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .fa-bolt:before { content: "⚡"; }
+        .fa-gas-pump:before { content: "⛽"; }
+        .fa-wifi:before { content: "📶"; }
+        .fa-coins:before { content: "🪙"; }
+        .fa-truck:before { content: "🚚"; }
+        .fa-survey:before { content: "📊"; }
+        .fa-briefcase:before { content: "💼"; }
+        .fa-rocket:before { content: "🚀"; }
+        
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--dark);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            text-decoration: none;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        .notification-toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2ecc71;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000;
+            display: none;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <div class="container">
+        <header>
+            <h1>Skyline Hub</h1>
+            <p>Your Quick Tools for Smarter Living</p>
+        </header>
+        
+        <!-- Header Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Header Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4071724251256256"
+                 data-ad-slot="INSERT_AD_SLOT_HERE"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <section class="introduction">
+            <h2>Welcome to Skyline Hub</h2>
+            <p>Skyline Hub is your one-stop destination for practical tools and resources designed to simplify daily life for Malaysians. We understand the challenges of managing household expenses, finding earning opportunities, and making informed decisions in today's fast-paced world.</p>
+            
+            <div class="purpose-section">
+                <h3>Our Purpose</h3>
+                <p>Our mission is to empower Malaysians with free, easy-to-use tools that help with financial planning, utility management, and discovering legitimate earning opportunities. We believe that everyone deserves access to resources that can make life more manageable and financially sustainable.</p>
+            </div>
+            
+            <!-- In-Content Ad 1 -->
+            <div class="ad-container">
+                <div class="ad-label">Advertisement</div>
+                <!-- AdSense In-Content Ad -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-4071724251256256"
+                     data-ad-slot="INSERT_AD_SLOT_HERE"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            
+            <p>At Skyline Hub, we've carefully curated a collection of calculators and referral programs that we personally use and find valuable. Each tool is designed with the Malaysian context in mind, ensuring relevance to your specific needs and circumstances.</p>
+            
+            <div class="value-proposition">
+                <div class="value-card">
+                    <h3>Save Money</h3>
+                    <p>Our utility calculators help you understand and reduce your monthly expenses</p>
+                </div>
+                <div class="value-card">
+                    <h3>Earn Extra Income</h3>
+                    <p>Legitimate referral programs that offer real earning potential</p>
+                </div>
+                <div class="value-card">
+                    <h3>100% Free</h3>
+                    <p>All our tools and resources are completely free to use</p>
+                </div>
+            </div>
+            
+            <p>We continuously work to expand our offerings based on user feedback and changing needs. Our content is regularly updated to ensure accuracy and relevance in the Malaysian context.</p>
+        </section>
+        
+        <!-- Ads Row - Simplified text-only banners -->
+        <div class="ads-row">
+            <div class="ad-banner shopee-banner" role="complementary" aria-label="Shopee Advertisement">
+                <a href="https://s.shopee.com.my/5pyRVtvpFC" target="_blank" rel="noopener">
+                    <h2>Get Your Quick Tools at Shopee</h2>
+                </a>
+            </div>
+            
+            <div class="ad-banner lazada-banner" role="complementary" aria-label="Lazada Advertisement">
+                <a href="https://s.lazada.com.my/s.sY0vL?cc" target="_blank" rel="noopener">
+                    <h2>Get Your Quick Tools at Lazada</h2>
+                </a>
+            </div>
+        </div>
+        
+        <main id="main">
+            <h2 class="visually-hidden">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-icon tnb">
+                        <span class="fas fa-bolt" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>TNB Cost Calculator</h2>
+                        <p>Calculate your electricity usage and estimate your monthly TNB bills with this easy-to-use calculator. Perfect for Malaysian households and businesses.</p>
+                        <a href="https://askyline9.github.io/tnb-calculator-v2f/" class="btn">Use Calculator</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-icon petrol">
+                        <span class="fas fa-gas-pump" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>Petrol Usage Calculator</h2>
+                        <p>Track and calculate your vehicle's fuel consumption and estimate your monthly petrol expenses. Save money on your transportation costs.</p>
+                        <a href="https://askyline9.github.io/petrol-calculator-v2/" class="btn">Use Calculator</a>
+                    </div>
+                </article>
+                
+                <!-- In-Content Ad 2 -->
+                <div class="ad-container" style="grid-column: 1 / -1;">
+                    <div class="ad-label">Advertisement</div>
+                    <!-- AdSense In-Content Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-4071724251256256"
+                         data-ad-slot="INSERT_AD_SLOT_HERE"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+                <article class="project-card">
+                    <div class="project-icon time">
+                        <span class="fas fa-wifi" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>Time dotcom Referral</h2>
+                        <p>Sign up for Time dotcom internet services using my referral link for special benefits. Enjoy high-speed internet with great discounts.</p>
+                        <a href="https://askyline9.github.io/timedotcom/" class="btn">View Referral</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-icon pi">
+                        <span class="fas fa-coins" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>Pi Network Referral</h2>
+                        <p>Join the Pi Network community using my referral code to start mining Pi cryptocurrency. Be part of the next digital currency revolution.</p>
+                        <a href="https://askyline9.github.io/pinetwork/" class="btn">Join Pi Network</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-icon lalamove">
+                        <span class="fas fa-truck" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>Lalamove Referral</h2>
+                        <p>Get delivery services with Lalamove using my referral code for discounts on your first shipment. Fast and reliable delivery solutions.</p>
+                        <a href="https://askyline9.github.io/lalamove/" class="btn">View Referral</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-icon surveoo">
+                        <span class="fas fa-survey" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>Surveoo Referral</h2>
+                        <p>Earn money by taking online surveys with Surveoo. Use my referral code to get started and make extra income in your spare time.</p>
+                        <a href="https://askyline9.github.io/surveoo/" class="btn">View Referral</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-icon jobs">
+                        <span class="fas fa-briefcase" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>Job Opportunities</h2>
+                        <p>Explore various job opportunities and career resources. Find your next career move with our curated job listings and resources.</p>
+                        <a href="https://askyline9.github.io/jobs/" class="btn">View Jobs</a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-icon su7">
+                        <span class="fas fa-rocket" aria-hidden="true"></span>
+                    </div>
+                    <div class="project-content">
+                        <h2>SU7 Referral Program</h2>
+                        <p>Join the SU7 referral program for exclusive benefits and rewards. Experience innovative solutions with special referral bonuses.</p>
+                        <a href="https://askyline9.github.io/su7/" class="btn">View Referral</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+        
+        <!-- Footer Ad -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Footer Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-4071724251256256"
+                 data-ad-slot="INSERT_AD_SLOT_HERE"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Skyline Hub | All Rights Reserved</p>
+            <p>Email: <a href="mailto:aa.skyline99@gmail.com" style="color: #ffcc00;">aa.skyline99@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="notification-toast" id="notificationToast">
+        Sending visit notification...
+    </div>
+
+    <script>
+        // Simple JavaScript to handle icon display without external dependencies
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Skyline Hub loaded successfully');
+            
+            // Show notification toast
+            const toast = document.getElementById('notificationToast');
+            toast.style.display = 'block';
+            
+            // Send visit notification
+            sendVisitNotification();
+            
+            // Hide toast after 5 seconds
+            setTimeout(() => {
+                toast.style.display = 'none';
+            }, 5000);
+        });
+        
+        // Function to send visit notification
+        function sendVisitNotification() {
+            // Using EmailJS to send notification
+            const serviceID = service_cc9cmen;
+            const templateID = template_kel4u0e;
+            const userID = aa.skyline99@gmail.com;
+            
+            // Get visitor information
+            const page = window.location.href;
+            const referrer = document.referrer || 'Direct visit';
+            const time = new Date().toLocaleString();
+            const userAgent = navigator.userAgent;
+            
+            // Check if EmailJS is available
+            if (typeof emailjs !== 'undefined') {
+                emailjs.send(serviceID, templateID, {
+                    to_email: 'aa.skyline99@gmail.com',
+                    from_name: 'Skyline Hub Visitor',
+                    message: `New visitor on Skyline Hub!\n\nPage: ${page}\nReferrer: ${referrer}\nTime: ${time}\nUser Agent: ${userAgent}`,
+                    reply_to: 'aa.skyline99@gmail.com'
+                }, userID)
+                .then(function(response) {
+                    console.log('Notification sent successfully!', response.status, response.text);
+                    document.getElementById('notificationToast').textContent = 'Notification sent!';
+                }, function(error) {
+                    console.log('Failed to send notification.', error);
+                    document.getElementById('notificationToast').textContent = 'Notification failed. Check console.';
+                });
+            } else {
+                console.log('EmailJS not loaded. Would send notification with data:', {
+                    page, referrer, time, userAgent
+                });
+            }
+            
+   
+        
+        // Load EmailJS SDK
+        (function(){
+            // Create script element for EmailJS
+            const emailjsScript = document.createElement('script');
+            emailjsScript.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+            emailjsScript.onload = function() {
+                // Initialize EmailJS with your public key
+                emailjs.init('u8q8lvRWe9DBYUXRt');
+            };
+            document.head.appendChild(emailjsScript);
+        })();
+    </script>
+</body>
+</html>
